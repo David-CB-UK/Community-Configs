@@ -960,7 +960,7 @@ collections:
       summary: "A selection of LGBTQ+ themed Horror films"
 
    ################ LGBT Sort Films #######################
-   # LGBTQ Shorts:      # Not working need ti find a way to source it
+   # LGBTQ Shorts:      # Not working need to find a way to source it
    #    template:
    #      name: Collection
    #   plex_all: true
@@ -1025,6 +1025,7 @@ collections:
       item_genre: [ LGBTQ+, LGBT ]
       item_label: [ LGBTQ+, LGBT ]
       summary: "The Joe Orton Collection"
+
    ############### All LGBTQ+ Films List -Start-   ########
    LGBTQ+ Collection:
       template:
