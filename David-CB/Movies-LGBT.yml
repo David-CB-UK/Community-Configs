@@ -2,7 +2,7 @@
 #      LGBTQ+ / Pride      #
 ############################
 
-# Purpose: Pride-themed Movie Collection
+# Purpose: Pride-themed Movies & Collections
 # Maintainer: David-CB
 # Reddit: u/Substantial-Alps9552
 # Contact: talktodaveuk@yahoo.co.uk
@@ -824,6 +824,19 @@ collections:
       item_label: [ LGBTQ+, LGBT, Horror ]
       summary: "Low budget, gay-themed horror vampire flick, film where the vampire boys are more into each other with a twilight feel"
 
+   Waiting in the Wings Collection:
+      template:
+         name: Collection
+      imdb_id:
+       - tt2741090 # Waiting in the Wings: The Musical (2014)
+       - tt4441348 # Still Waiting in the Wings (2018)
+      tmdb_collection: 256746 # https://www.themoviedb.org/collection/256746-vampire-boys-collection 
+      url_poster: "https://www.themoviedb.org/t/p/w1280/kbTTgenqwz8IrKih4VZ5i1s6rri.jpg"
+      sort_title: "!VB"
+      item_genre: [ LGBTQ+ ]
+      item_label: [ LGBTQ+, LGBT, Musical ]
+      summary: "TBA"
+
    Yossi collection:
       template:
          name: Collection
@@ -1338,6 +1351,7 @@ collections:
        - tt0110455 # A Man of No Importance (1994)
        - tt0109831 # Four Weddings and a Funeral (1994)
        - tt0109045 # Pricilla (1994)
+       - tt0111014 # Roommates (1994) 
        - tt0111309 # The Sum of Us (1994)
        - tt0108320 # There Goes My Baby (1994)
        - tt0111418 # Threesome (1994)
@@ -2014,6 +2028,7 @@ collections:
        - tt4666696 # Vampires: Lucas Rising (2014)
        - tt3708528 # Velociraptor (2014)
        - tt1702014 # The Way He Looks (2014) {original title-Hoje Eu Quero Voltar Sozinho}
+       - tt2741090 # Waiting in the Wings: The Musical (2014) (Waiting in the Wings: The Musical Film 1)
        - tt3817552 # While There Is Still Time (2014) {original title-Enquanto ainda é tempo}
        - tt3497630 # Wish for Tomorrow (2014)
        - tt3186946 # Xenia (2014)
@@ -2326,6 +2341,7 @@ collections:
        - tt6794956 # Sleepover (2018) {original title-Sova över}
        - tt8026554 # Socrates (2018) {original title-Sócrates}
        - tt7534054 # Sorry Angel (2018) {original title-Plaire, aimer et courir vite}
+       - tt4441348 # Still Waiting in the Wings (2018) (Waiting in the Wings: The Musical flim 2)
        - tt7866702 # The Story of the Stone (2018) {original title-紅樓夢}
        - tt0144801 # The Brandon Teena Story (2018)
        - tt7390090 # The Breeding (2018)
@@ -2553,6 +2569,7 @@ collections:
        - tt21192142 # All of Us Strangers (2023)
        - tt9428746 # Aristotle and Dante Discover the Secrets of the Universe (2023)
        - tt17527468 # Bottoms (2023)
+       - tt27360643 # Breaking the Rules (2023)
        - tt15474896 # Brother (2023)
        - tt17679584 # The Blue Caftan (2022) {original title-أزرق القفطان}
        - tt32335104 # Being Gay in China (2023)
@@ -2582,6 +2599,7 @@ collections:
        - tt28108610 # Queer Planet (2023)
        - tt10172266 # Red, White & Royal Blue (2023)
        - tt28067411 # Remembering His Touch (2023)
+       - tt19848676 # Riley (2023) 
        - tt13514636 # Rock Hudson: All That Heaven Allowed (2023)
        - tt24146896 # Rotting in the Sun (2023)
        - tt17351924 # Saltburn (2023)
