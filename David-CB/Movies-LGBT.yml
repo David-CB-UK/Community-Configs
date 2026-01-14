@@ -18,7 +18,35 @@ templates:
       url_poster: <<poster>>
       sync_mode: sync
       collection_order: release
-      sort_title: "+!016_<<collection_name>>"
+   sort_title: "+!112_02_<<collection_name>>"
+
+   LGBTQ_Short_Template:
+      # This Part relates to the LGBTQ Shorts Collection Section Below
+      smart_filter:
+         sort_by: title.asc
+         all:
+            label.any:
+             - LGBT
+             - lgbt
+             - lesbian
+             - bisexual
+             - LGBTQ
+             - lgbtq
+             - LGBTQ+
+             - lgbtq+
+             - pride
+             - gay
+             - Gay
+             - GTM
+             - gtm
+      optional:
+       - poster
+      url_poster: <<poster>>
+      sync_mode: sync
+      visible_library: true
+      visible_home: true
+      visible_shared: true
+      sort_title: "+!012_03<<collection_name>>"
 
 collections:
 
@@ -714,6 +742,16 @@ collections:
       item_label: [ LGBTQ+, LGBT, Religion ]
       summary: "Some of My Best Friends was a TV sitcom inspired by the independent film Kiss Me, Guido. The film, written by Tony Vitale, was adapted into the 2001 CBS series by Marc Cherry & Tony Vitale, which centered on a group of friends in New York City. "
 
+   Mascarpone Collection:
+      #
+      template:
+         name: Collection
+      tmdb_collection: 545187 # https://www.themoviedb.org/collection/545187-mathias-frederick-collection
+      url_poster: "https://www.themoviedb.org/t/p/w1280/8K7kEKN443gmrzXLbNjh579g8EV.jpg"
+      sort_title: "!Masca"
+      item_genre: [ LGBTQ+ ]
+      item_label: [ LGBTQ+, LGBT ]
+      summary: "The Mascarpone film collection"
    Mathias & Frederick Collection:
       #
       template:
@@ -973,23 +1011,29 @@ collections:
       summary: "A selection of LGBTQ+ themed Horror films"
 
    ################ LGBT Sort Films #######################
-   # LGBTQ Shorts:      # Not working need to find a way to source it
-   #    template:
-   #      name: Collection
-   #   plex_all: true
-   #   filters:
-   #   label: [ LGBTQ+, LGBT ] 
-   #     duration.lte: 45
-   #   imdb_list:
-   #     - ls1111111
-   #   imdb_id:
-   #   - tt111111  #
-   #     file_poster: /config/assets/Plex Posters/LGBTQ_shorts.jpg
-   #     sort_title: "!112_02Shorts"
-   #     item_label: [ Short ]
-   #     summary: "A selection of Short LGBTQ+ films under 45 Mins"
-   #     sync_mode: append
 
+   LGBTQ+ Shorts - Micro:
+      template:
+         name: LGBTQ_Short_Template
+      summary: "LGBTQ+ short films under 10 minutes."
+      file_poster: /config/assets/Plex Posters/LGBTQ_micro.jpg
+      smart_filter:
+         all:
+            label: LGBTQ+
+            duration.lt: 10 # Under 10 mins 
+      item_label: [ Short ]
+
+   LGBTQ+ Shorts:
+      template:
+         name: LGBTQ_Short_Template
+      summary: "LGBTQ+ short films between 10 and 50 minutes."
+      file_poster: /config/assets/Plex Posters/LGBTQ_shorts.jpg
+      smart_filter:
+         all:
+            label: LGBTQ+
+            duration.gte: 10 # Over 10 mins 
+            duration.lt: 50 # but under 50 mins
+      item_label: [ Short ]
    ################ People Collections ####################
 
    Danny La Rue:
@@ -1002,7 +1046,7 @@ collections:
        - tt1810819 # The Unforgettable Danny La Rue (2010)
       url_poster: "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/3qWoy5Hsfcfa4EW5UrndZlMxLD3.jpg"
       tmdb_person: 940070 # https://www.themoviedb.org/person/940070-danny-la-rue
-      sort_title: "!113_Dann"
+      sort_title: "!140_Dann" # !140_ - matches the 'Actors Collection' 
       item_genre: [ LGBTQ+, LGBT ]
       item_label: [ LGBTQ+, LGBT ]
       summary: "Danny La Rue, OBE (born Daniel Patrick Carroll, 26 July 1927 – 31 May 2009) was an Irish-English singer and entertainer, best known for his on-stage drag persona. He performed in drag and also as himself in theatrical productions, television shows and film. From Wikipedia (en), the free encyclopedia"
@@ -1068,6 +1112,7 @@ collections:
        ######### 1950s ###########
        - tt0042296 # Caged (1950), Description: 'It's a difficult choice to include the first and campiest women in prison flick as it's chock full of Lesbian stereotypes and equals homosexuality with depravity. Still, it is part of history, and after re-watching it after a number of years, I think anyone with an interest in queer film should watch it for an individual opinion.'
        - tt0043084 # Song of Love (1950) {original title-'Un chant d'amour'}, Description: 'Jean Genet's only film is the first explicitly homoerotic and was consequently banned from exhibition, most notably in the US in 1966, where it was dismissed as obscene.'
+       - tt0044081 # A Streetcar Named Desire ** significant LGBT themes, particularly the representation of male homosexuality through the tragic story of Blanche's deceased husband, Allan Grey. Author Tennessee Williams explored homosexuality covertly by using heterosexual characters and metaphors to discuss the topic, reflecting the taboo nature of same-sex relationships at the time.       
        - tt0042803 # Olivia (1951), Description: 'similar to 'Girls in Uniform', but involving more mystery'
        - tt0046521 # I Vitelloni (1953) {original title-'I vitelloni'}, Description: 'While this film is famous for a lot of reasons, it also features the first obvious homosexual hook-up attempt.'
        - tt0048545 # Rebel Without a Cause (1955), Description: 'Many '50s films are said to contain homosexual cyphers as the subject wasn't raised. Sal Mineo as Plato is perhaps most obvious given his real-life homosexuality, but at the time the role made him an idol for (female) teens.'
@@ -1075,11 +1120,18 @@ collections:
        - tt0050128 # The Third Sex (1957) {original title-Anders als du und ich (§ 175)} AKA
        - tt0050128 # Bewildered Youth (1957) {original title-'Anders als du und ich (§ 175)'}, Description: 'every possible stereotype on homosexuality is exploited here by a disgraced Nazi director desperately craving attention. Still, the aged homosexual luring culturally talented young men into his web of sin is oddly fascinating... John Waters would probably call this the ultimate gay bash 'n trash movie.'
        - tt0051964 # Mädchen in Uniform (1958), Description: 'remake of the 1931 film tones the Lesbian aspect down but is perhaps more cult for Lilli Palmer's performance.'
+       - tt0052618 # Ben-Hur (1959)  **  featuring a homosexual subtext between the main characters, Judah Ben-Hur and Messala, intentionally scripted by screenwriter Gore Vidal.      
+       - tt0051459 # Cat on a Hot Tin Roof (1958) ** Homoseual Erasure; explores themes of homosexuality and sexual identity through the character Brick, who is grappling with the presumed homosexual feelings for his deceased friend, Skipper
        - tt0053318 # Suddenly, Last Summer (1959), Description: 'while the most overt of Tennessee Williams's stage adaptations in its content owing to Gore Vidal's screenplay, it's the pinnacle of depicting homosexuality as a perverted affliction, and was in fact passed by the MPAA for that very reason.'
        - tt0053428 # Come Dance with Me! (1959) {original title-'Voulez-vous danser avec moi?'}, Description: 'One of French veteran comedy writer Gérard Oury's weaker outings, it does have Brigitte Bardot waltz into a late 50s gay cabaret and could be refreshingly open-minded for the time, but the ending ruins it.'
        - tt0053291 # Some Like It Hot (1959) Description:
+       # - tt0922204 # South (1959) TV Series Episode; Now recognised as the earliest surviving gay-themed British television drama, this ITV Play of the Week centres on Lt. Jan Wicziewsky (Peter Wyngarde), a guest on a wealthy family’s Deep South plantation as the American Civil War looms. Wicziewsky’s initial arrogance gives way to emotional disintegration when the arrival of Eric MacClure (Graydon Gould) forces him to face up to his darkest secret: his love for another man. Just two years after the Wolfenden Report, homosexuality was still taboo. Though the word itself is not mentioned, Wyngarde’s bravery in taking on the role cannot be overstated. The wonderful supporting cast includes Hollywood veteran Bessie Love and pioneering black British actor Johnny Sekka (the play addresses race as well as sexuality). Like much of 1950s TV output, South was broadcast live. Despite the odd minor slip-up it’s a dazzling technical achievement and one we are lucky exists at all: many live dramas of the period were not recorded for posterity, or were later wiped. After the broadcast, a Daily Sketch reporter wrote: 'I do NOT see anything attractive in the agonies and ecstasies of a pervert, especially in close-up in my sitting room. This is not prudishness. There are some indecencies in life that are best left covered up.'
+
        ######### 1960s ###########
        - tt0054403 # The Trials of Oscar Wilde (1960), Description: 'first of many films to focus on Wilde's sodomy conviction, it is surprisingly faithful to the trial's records given the time.'
+       - tt0054331 # ** Spartacus Restored Edition (1960); includes a controversial homoerotic bath scene with Laurence Olivier and Tony Curtis that was cut from the original theatrical release. This scene, where the character Crassus makes veiled references to his bisexuality, was restored in the 1990s after being initially removed by censors.  
+       # - tt0876766 # Sir Roger Casement (1960) TV EPISODE 50Min - This edition of Granada TV series On Trial faithfully re-enacts the 1916 High Treason trial of British diplomat turned Irish nationalist Roger Casement at Bow Street Magistrate's Court in London. Among the cast performing from the original court transcripts, Peter Wyngarde is compelling as Casement, visibly drained yet dignified to the end. This role came just months after Wyngarde took the lead in the extraordinary South, broadcast live in November 1959 and now recognised as Britain's earliest surviving gay-themed TV play.Lauded by humanitarians for his exposure of human rights abuses in the Congo and Peru, Casement later embraced the Irish nationalist cause with formidable - and ultimately fatal - zeal. He was arrested on 21 April 1916, hours after landing on the Kerry coast in a German submarine and just three days before the Easter Rising began in Dublin. Casement was executed on 3 August, his fate sealed by the discovery and distribution of the legendary 'Black Diaries', which contained accounts of homosexual activities. His remains were buried in quicklime at Pentonville Prison and finally repatriated to Ireland in 1965.
+       # - tt0054403 The Trial of Oscar Wilde (1960) TV Series / Episode
        - tt0054743 # The Children's Hour (1961), Description: 'William Wyler's remake of his earlier adaptation of Lillian Hellman's play (which erased the homosexual element) marks the first 'A' picture in which gay bashing is portrayed as a social evil - while still holding it to be an affliction.'
        - tt0055506 # A Taste of Honey (1961), Description: ''kitchen sink' adaptation of Shelagh Delaney's play features the first clearly positive (i.e. non-tragical) depiction of a gay character in his relationship with Rita Tushingham's main protagonist.'
        - tt0055597 # Victim (1961), Description: 'first narrative film with homosexuality (with the first use of the actual word) and gay bashing (i. e. blackmail) as the central plot element, with a strong political message towards legalization.'
@@ -1210,11 +1262,13 @@ collections:
        - tt0081051 # Dear Boys (1980) {original title-'Lieve jongens'}, Description: 'unfortunately failed adaptation of gay cult author Gerard Reve'
        - tt0081606 # Taxi to the Toilet (1980) {original title-'Taxi zum Klo'}, Description: 'hilarious gay comedy depicting the Berlin scene as it pretty much still is.'
        - tt0081635 # Times Square (1980), Description: 'teenage runaway movie with lesbian romance, which was much more overt in the unedited version.'
+       - tt0190542 # Madonna and Child (1980) Short 
        - tt0413492 # Witches, Faggots, Dykes and Poofters (1980), Description: 'rare look at the queer scene in Oz'
        # 1981 #
        - tt0078993 # La confusion des sentiments (1981), Description: 'Finally saw this made-for-TV Stefan Zweig adaptation with Michel Piccoli. Apart from a very attractive young lead, it looks pretty dated even for early 80s standards, which is probably why it's so obscure.'
        - tt0167856 # Culo e camicia (1981), Description: '2nd episode in this two-in-one is borderline exploitative comedy, kind of a poor man's La cage aux folles'
        - tt0182338 # Nessuno è perfetto (1981), Description: 'by no means perfect rom com stars Ornella Muti as a trans woman, and is therefore interesting to watch just for her gorgeousness. The story is surprisingly complicated for Italian comedy of the time.'
+       - tt0081606 # Taxi to the Toilet (1980) {original title-Taxi Zum Klo}
        - tt0088784 # The Kiss (1981) {original title-'O Beijo No Asfalto'}, Description: 'stage adaptation of a popular theater piece of the time,this is more an examination of machismo under threat than homosexuality itself, which is more of a catalyst.'
        - tt0083366 # Zorro: The Gay Blade (1981) Description:
        # 1982 #
@@ -1269,6 +1323,7 @@ collections:
        - tt0073888 # What can I do with a male nude (1985) Description: 
        # 1986 #
        - tt0090648 # Anne Trister (1986), Description: 'This is a Lesbian classic even though - or perhaps because - (bi)sexual orientation is just a part of the protagonist's self-finding process, a recurring theme for director Léa Pool.'
+       - tt30842991 # A Nosegay (Short 1986)  17 mins       
        - tt0091702 # Otra historia de amor (1986), Description: 'dramatic, but well written first Argentinian gay love story'
        - tt1138477 # Cinderella: The Shoe Must Go On (1986) Description: Panto / Drag
        - tt0090798 # Caravaggio (1986), Description: 'features once more two British actors emerging in the 80s in gay roles, Dexter Fletcher and - more surprisingly - 'Game of Thrones' Sean Bean.'
@@ -1294,6 +1349,8 @@ collections:
        - tt1003279 # The Poem of Wind and Trees (1987) {original title-'Kaze to ki no uta (Sanctus)'}, Description: 'this gay cult classic anime was the first non-pornographic feature to contain explicit sex, has a complex romantic story and is incredibly hard to find'
        - tt0094336 # Withnail and I (1987) {original title-'Withnail & I'}, Description: 'while it's essentially a black comedy about an unorthodox friendship, it does have a few (hilarious / tragical) gay twists.'
        - tt0339895 # What If I'm Gay? (1987) - https://www.imdb.com/title/tt0339895/
+       - tt0137015 # Illegal Tender (1987 OR 1988) Short
+
        # 1988 #
        - tt0094595 # Summer Vacation 1999 (1988) {original title-'1999 nen no natsu yasumi'}, Description: 'cross-dressing coming-of-age drama in which all male roles are played by actresses of the Takarazuka revue, a theater entirely composed of girls playing boys.'
        - tt0096039 # Saturday the 14th Strikes Back (1988) Description: 
@@ -1351,6 +1408,7 @@ collections:
        - tt0110455 # A Man of No Importance (1994)
        - tt0109831 # Four Weddings and a Funeral (1994)
        - tt0109045 # Pricilla (1994)
+       - tt0244188 # Scarborough Ahoy! (1994 or 1996) Short 
        - tt0111014 # Roommates (1994) 
        - tt0111309 # The Sum of Us (1994)
        - tt0108320 # There Goes My Baby (1994)
@@ -1399,8 +1457,10 @@ collections:
        - tt0193997 # Hard (1998)
        - tt0138487 # Head On (1998)
        - tt0150941 # Homo Heights (1998)
-       - tt0146990 # Like It Is (1998)
+       - tt0146990 # Like It Is (1998)  
+       - tt0119574 # Love and Death on Long Island (1998)
        - tt0166287 # Don't Tell Anyone (1998) {Original title-No se lo digas a nadie}
+       - tt0119577 # Love Is the Devil: Study for a Portrait of Francis Bacon (1998)
        - tt0120772 # The Object of My Affection (1998)
        - tt0244652 # Sailor (1998) {original title-Matroos}
        - tt0120879 # Velvet Goldmine (1998)
@@ -2615,38 +2675,61 @@ collections:
          # The Astronaut Lovers (2024) {original title-Los amantes astronautas}
          # Brokeback Mountain West End May, 2023 NFT (N/A)  Theature West END 
        # 2024 #
+       - tt16431330 # A Nice Indian Boy (2024)
+       - tt32119268 # Baby (2024)
        - tt31850380 # Big Rage (2024)
        - tt8992484 # Birthright (2024) {original title-A Herança}
+       - tt20215234 # Conclave (2024)
        - tt20236042 # Dormitory (2024) {original title-Yurt}
        - tt19356262 # Drive-Away Dolls (2024)
        - tt26593560 # Filmes, Séries e Programas de TV Online | Claro tv+ (2024) {original title-13 Sentimentos}
+       - tt19391518 # Four Mothers (2024)
        - tt16409868 # High Tide (2024) 
        - tt32915102 # The Groomsmen: First Look (2024)
        - tt32915125 # The Groomsmen: Second Chances (2024)
        - tt32915152 # The Groomsmen Last Dance (2024) {original title-The Groomsmen: Last Dance}
+       - tt15823300 # Haze (2024)
        - tt27420000 # The Holiday Exchange (2024)
        - tt23888758 # Layla (2024)
        - tt29352944 # The Lost Holliday (2024)
+       - tt31899561 # Malanova (2024)
        - tt31317343 # Mascarpone: The Rainbow Cake (2024) {original title-Maschile plurale}
        - tt24176060 # Queer (2024)
        - tt27792063 # Rachel Scanlon: Gay Fantasy (2024)
        - tt26731484 # Scraps (2024)
        - tt30317033 # Sebastian (2024)
+       - tt26270862 # Sex (2024)
        - tt31629757 # Slay (2024)
        - tt11735158 # Studio One Forever (2024)
        - tt12350938 # Sunflower (2024)
        - tt33398195 # Tethered Wings (2024) {original title-Les ailes collées} French TV Movie
+       - tt17013888 # The Greatest (2024)
        - tt26476006 # Tortu (2024)
        - tt21451014 # Unicorns (2024)
+       - tt32086052 # Viet and Nam (2024) {original title-Trong lòng dat}
+       - tt33338312 # What We Wrote Together (2024)
        - tt15245268 # Young Hearts (2024)
        # 2025 #
+       - tt29310002 # Cactus Pears (2025) {original title-Sabar Bonda}
+       - tt36510056 # Drunken Noodles (2025)
        - tt14674708 # Going Places (2025)
        - tt36437611 # Jerrod Carmichael: Don't Be Gay (2025)
        - tt30700695 # Lilies Not for Me (2025)
+       - tt15042300 # On Swift Horses (2025)
+       - tt32321317 # Pillion (2025)
+       - tt27550504 # Plainclothes (2025)
        - tt31193771 # Sally (2025)
+       - tt32605679 # Sauna (2025)
+       - tt33398195 # Tethered Wings (2025/ 2024?) {original title-Les ailes collées}
+       - tt15799524 # The History of Sound (2025)
        - tt36362582 # Tom Daley 1.6 Seconds (2025)
+       - tt31322753 # Twinless (2025)
+       - tt29204786 # Underground Orange (2025)
+       - tt21442952 # Unspoken (2025)
        # 2026 #    
        # - tt?????? # NAME TBC (2026)
+
+
 
        # Steam Room Stories Vol 1 (N/A)
        # Stream Room Stories Vol 2 (N/A)
