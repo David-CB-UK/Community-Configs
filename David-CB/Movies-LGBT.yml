@@ -1109,6 +1109,7 @@ collections:
        ######### 1940s ###########
        - tt0033712 # Here Comes Mr. Jordan (1941) Description: 
        - tt0037008 # Laura (1944), Description: 'with the production code, gay subtext vanished, but many '40s crime films feature presumably homosexual villains, few as obvious as Clifton Webb's Waldo Lydecker, who unlike others isn't portrayed in a defamatory way.'
+       - tt0038559 # Gilda (1946) The movie is widely discussed within LGBTQ+ film studies for its heavy, intentional queer subtext and complex character dynamics
        - tt0039383 # Fireworks (1947), Description: 'homoerotic experimental no-budget film led to Kenneth Anger's arrest on obscenity charges and, eventually, a Supreme Court ruling declaring the film to be art.'
        - tt0040746 # Rope (1948)
        - tt0041998 # Thirst (1949) {original title-'Törst'}, Description: 'Bergman often touched female homosexuality, but rarely as overtly as in this early piece.'
@@ -1242,8 +1243,10 @@ collections:
        - tt0076085 # A Special Day (1977) {original title-'Una giornata particolare'}, Description: 'none less than Sophia Loren and Marcello Mastroianni in the first film to address the topic of persecution of homosexuals during Fascism.'
        - tt0075616 # To an Unknown God (1977) {original title-'A un Dios desconocido'}, Description: 'first Spanish film to address the subject of homosexuality head-on, the film deals with an ageing magician recalling his love affair with gay poet (and Nobel laureate) Garcia Lorca.'
        - tt0199143 # Word Is Out (1977), Description: 'easily the best of the 70s gay-themed documentaries and an important historical document on film.'
+       - tt0077438 # Confessions of a Congressman (1978) {original title-Original title: El diputado} [Spanish]
        - tt0077435 # A Different Story (1978), Description: 'Much vilified for insinuating that people can change their orientations like shirts, this fluffy piece doesn't actually quite do that, and suffers more from Perry King's lack of talent than a predictable script.'
        - tt0077164 # My Father, My Mother (1978) {original title-'Ang Tatay Kong Nanay'}, Description: 'In spite of very bad image quality and quite a few stereotypes, this one's a real gem, owing to Dolphy, one of the Philippines' biggest stars. He wasn't gay/trans in real life but often took roles like this to push for greater acceptance. His performance and a good story make this one of the most watch-worthy queer films of the '70s.'
+       - tt0077993 # Nighthawks (1978)
        - tt29703523 # Caligula: The Ultimate Cut (1978) Description:
        - tt0077438 # Confessions of a Congressman (1978) {original title-'El diputado'}, Description: 'Again, Eloy de Iglesia puts an older man-younger boy relationship at the center of what is otherwise a political conspiracy thriller. This can be read as a comment on the transitioning of Spain at the time but it's not written well.'
        - tt0076336 # The Place Without Limits (1978) {original title-'El lugar sin límites'}, Description: 'adaptation of Chilean gay writer José Donoso's novel centered on a Transvestite, this is a very bold, excessive marvel of a film, but of course tragedy ensues.'
@@ -1339,6 +1342,7 @@ collections:
        - tt0091702 # Otra historia de amor (1986), Description: 'dramatic, but well written first Argentinian gay love story'
        - tt1138477 # Cinderella: The Shoe Must Go On (1986) Description: Panto / Drag
        - tt0090798 # Caravaggio (1986), Description: 'features once more two British actors emerging in the 80s in gay roles, Dexter Fletcher and - more surprisingly - 'Game of Thrones' Sean Bean.'
+       - tt0092160 # Friends Forever (1986) {original title-Venner for altid} [Danish]
        - tt0102840 # The Flavor of Corn (1986) {original title-'Il sapore del grano'}, Description: 'man-boy love story ultimately involving a woman, a lot like 'Ernesto' but not explicit'
        - tt0090197 # In a Glass Cage (1986) {original title-'Tras el cristal'}, Description: 'Villaronga's most infamous film focuses like his less famous '99.9' on perversion and sadomasochism - not really gay but a walk on the dark side of sex.'
        - tt0089537 # Mala Noche (1986), Description: 'Gus van Sant's debut about adolescent hustlers, which would become a recurrent theme in his work.'
@@ -1536,6 +1540,7 @@ collections:
        - tt0313410 # No Night Is Too Long (2002) based on the book by Barbara Vine (aka Ruth Rendell) - https://archive.org/details/NoNightIsTooLong2002 (2002)
        - tt0245341 # P.S. Your Cat Is Dead! (2002)
        - tt0292644 # The Rules of Attraction (2002)
+       - tt0266971 # The Slaughter Rule (2002) ( a gritty indie drama featuring strong gay subtext and themes)
        - tt0279781 # Sorority Boys (2002)
        - tt0250067 # The Trip (2002)
        - tt0318828 # When Boys Fly (2002)
@@ -1653,12 +1658,13 @@ collections:
        - tt0821557 # Rag Tag (2006)
        - tt0367027 # Shortbus (2006)
        - tt0492487 # Small Town Gay Bar (2006)
-       - tt0907843 # Stealth (2006) {original title-Comme des voleurs (à l'est)}
+       - tt0907843 # Stealth (2006) {original title-Comme des voleurs (à l'est)} [French]
        - tt0800225 # Summer (2006)
        - tt0770824 # A Summer Day (2006) {original title-Un jour d'été}
        - tt0807767 # Sun Kissed (2006)
        - tt0362225 # Tell No One (2006) {original title-Ne le dis à personne}
        - tt0882817 # Three Summers (2006) {original title-Tre Somre}
+       - tt0835026 # Times Have Been Better (2006) {original title-Le ciel sur la tête}
        - tt0823158 # Wedding Wars (2006)
        - tt1087905 # Whispering Moon (2006) {original title-Das Flüstern des Mondes}
        - tt0816160 # The Young, the Gay and the Restless (2006)
@@ -1722,6 +1728,7 @@ collections:
        - tt0317079 # And Then Came Summer (2008)
        - tt1051981 # Another Gay Sequel: Gays Gone Wild! (2008)
        - tt1234240 # Antarctica (2008) {original title-אנטארקטיקה}
+       - tt1172186 # Antonios Secret (2008) {original title-Ang lihim ni Antonio} [Flipino]
        - tt1224437 # Ask Not (2008)
        - tt1315031 # Beatific Vision (2008)
        - tt1971339 # Boy Meets Boy (2008) {original title-소년, 소년을 만나다}
@@ -2572,6 +2579,7 @@ collections:
        - tt9694682 # Rapture in Blue (2020)
        - tt2186358 # Red Lodge (The Unattainably Perfect Gay Christmas) (2020) {original title-Red Lodge}
        - tt10254662 # Red Yellow Pink (2020)
+       -    # Rialto (2020)
        - tt12592824 # Rurangi (2020) Also made into a TV series with 2 seasons 
        # tt11177950 Rurangi (2020) AS ABOVE
        - tt12222000 # Same Time Tomorrow (2020)
@@ -2602,6 +2610,7 @@ collections:
        - tt16365840 # The Christmas House 2: Deck Those Halls (2021)
        - tt15017380 # Cicada (2021) {original title-매미}
        - tt16117078 # Days of our Lives: A Very Salem Christmas (2021)
+       - tt8510484 # Death and Bowling (2021) [T]
        - tt11880722 # Down in Paris (2021)
        - tt8635092 # Everybody's Talking About Jamie (2021)
        - tt8430054 # Flee (2021) {dir-Jonas Poher Rasmussen, Denmark; animated documentary about Afghan gay refugee, Oscar-nominated} 
@@ -2689,6 +2698,7 @@ collections:
        - tt23637458 # Insignificant (2023)
        - tt28457018 # The Judgment (2023) Directed by Marwan Mokbel
        - tt15679400 # Knock at the Cabin (2023)
+       - tt15258032 # Lonesome (2022) 
        - tt5535276 # Maestro (2023)
        - tt22742964 # Marry My Dead Body (2023) {original title-關於我和鬼變成家人的那件事}
        - tt22086180 # Mates (2023)
@@ -2751,6 +2761,7 @@ collections:
        - tt12350938 # Sunflower (2024)
        - tt33398195 # Tethered Wings (2024) {original title-Les ailes collées} French TV Movie
        - tt29352944 # The Lost Holiday (2024)
+       -  # The Radleys (2024) 
        - tt17013888 # The Greatest (2024)
        - tt26476006 # Tortu (2024)
        - tt21451014 # Unicorns (2024)
